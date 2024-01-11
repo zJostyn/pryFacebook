@@ -1,0 +1,585 @@
+body {
+    background-color: black;
+    font-family: 'Segoe UI';
+}
+
+#botones {
+    position: relative;
+    left: 380px;
+    width: 800px;
+    margin-bottom: 27px;
+}
+
+#botones button {
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    margin-right: 60px;
+}
+
+#botones button:hover {
+    cursor: pointer;
+}
+
+#textoInicio {
+    display: none;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    left: 10px;
+}
+
+#textoVideo {
+    display: none;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    left: 155px;
+}
+
+#textoMarketplace {
+    display: none;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    left: 265px;
+}
+
+#textoGrupos {
+    display: none;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    left: 405px;
+}
+
+#textoVideojuegos {
+    display: none;
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    left: 542px;
+}
+
+.casita {
+    color: blue;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-bottom-color: blue;
+    border-width: 3px;
+}
+
+.videos {
+    color: rgb(184, 184, 184);
+    margin-left: 20px;
+    border-color: transparent;
+}
+
+.market {
+    color: rgb(184, 184, 184);
+    margin-left: 5px;
+    border-color: transparent;
+}
+
+.juegos {
+    color: rgb(184, 184, 184);
+    margin-left: 30px;
+    border-color: transparent;
+}
+
+.comuni {
+    color: rgb(184, 184, 184);
+    border-color: transparent;
+}
+
+.additional-component {
+    margin-right: 125px;
+    width: 150px;
+    height: 270px;
+}
+
+.perfil {
+    position: absolute;
+    width: 150px;
+    height: 210px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    margin-right: 10px;
+}
+
+.crearh {
+    position: relative;
+    width: 35px;
+    height: 30px;
+    font-size: 50px;
+    background-color: blue;
+    border-radius: 50px;
+    border-color: transparent;
+    top: 200px;
+    left: 55px;
+}
+
+.txth {
+    position: absolute;
+    top: -3px;
+    left: 7px;
+    font-size: 30px;
+    color: white;
+}
+
+.crearh:hover {
+    cursor: pointer;
+}
+
+.txt {
+    position: absolute;
+    color: #C5C7CB;
+    font-size: 15px;
+    width: 120px;
+    text-align: justify;
+    top: 25px;
+    left: -32px;
+}
+
+#carousel-container {
+    width: 50%;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+}
+
+#image-carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+#image-carousel:hover {
+    cursor: pointer;
+}
+
+.carousel-image {
+    width: 25%;
+    height: auto;
+    object-fit: cover;
+    margin-right: 10px;
+    border-radius: 15px;
+}
+
+.perfilhis1 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border-radius: 25px;
+    border: 3px solid #075CE5;
+    top: 10px;
+    left: 170px;
+}
+
+.perfilhis2 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border-radius: 25px;
+    border: 3px solid #075CE5;
+    top: 10px;
+    left: 350px;
+}
+
+.perfilhis3 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border-radius: 25px;
+    border: 3px solid #075CE5;
+    top: 10px;
+    left: 530px;
+}
+
+.perfilhis4 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border-radius: 25px;
+    border: 3px solid #075CE5;
+    top: 10px;
+    left: 710px;
+}
+
+.perfilhis5 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border-radius: 25px;
+    border: 3px solid #075CE5;
+    top: 10px;
+    left: 890px;
+}
+
+.perfilhis6 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border-radius: 25px;
+    border: 3px solid #075CE5;
+    top: 10px;
+    left: 1068px;
+}
+
+.perfilhis7 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border-radius: 25px;
+    border: 3px solid #075CE5;
+    top: 10px;
+    left: 1248px;
+}
+
+.perfilhis8 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border-radius: 25px;
+    border: 3px solid #075CE5;
+    top: 10px;
+    left: 1428px;
+}
+
+.perfilhis9 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border-radius: 25px;
+    border: 3px solid #075CE5;
+    top: 10px;
+    left: 1608px;
+}
+
+.perfilhis10 {
+    position: absolute;
+    width: 37px;
+    height: 37px;
+    border-radius: 25px;
+    border: 3px solid #075CE5;
+    top: 10px;
+    left: 1788px;
+}
+
+.imgtxt1 {
+    position: absolute;
+    color: white;
+    left: 180px;
+    top: 235px;
+    font-size: 15px;
+}
+
+.imgtxt2 {
+    position: absolute;
+    color: white;
+    left: 365px;
+    top: 235px;
+    font-size: 15px;
+}
+
+.imgtxt3 {
+    position: absolute;
+    color: white;
+    left: 545px;
+    top: 235px;
+    font-size: 15px;
+}
+
+.imgtxt4 {
+    position: absolute;
+    color: white;
+    left: 725px;
+    width: 100px;
+    top: 235px;
+    font-size: 15px;
+}
+
+.imgtxt5 {
+    position: absolute;
+    color: white;
+    left: 900px;
+    width: 100px;
+    top: 235px;
+    font-size: 15px;
+}
+
+.imgtxt6 {
+    position: absolute;
+    color: white;
+    left: 1080px;
+    width: 100px;
+    top: 235px;
+    font-size: 15px;
+}
+
+.imgtxt7 {
+    position: absolute;
+    color: white;
+    left: 1260px;
+    width: 100px;
+    top: 235px;
+    font-size: 15px;
+}
+
+.imgtxt8 {
+    position: absolute;
+    color: white;
+    left: 1440px;
+    width: 100px;
+    top: 235px;
+    font-size: 15px;
+}
+
+.imgtxt9 {
+    position: absolute;
+    color: white;
+    left: 1620px;
+    width: 100px;
+    top: 235px;
+    font-size: 15px;
+}
+
+.imgtxt10 {
+    position: absolute;
+    color: white;
+    left: 1800px;
+    width: 100px;
+    top: 235px;
+    font-size: 15px;
+}
+
+.carousel-button {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 24px;
+    background: none;
+    border: none;
+    color: white;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+#publicacion-container {
+    max-width: 600px;
+    margin: 20px auto;
+    background-color: black;
+    padding: 10px;
+    height: 100px;
+}
+
+#perfil-info {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    color: white;
+}
+
+#perfil-info img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+#publicacion-form {
+    position: relative;
+    top: -50px;
+    left: 50px;
+    height: 100px;
+    width: 530px
+}
+
+#mensaje {
+    width: 100%;
+    height: 100px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    resize: none;
+    height: 50px;
+    background-color: black;
+    border-color: transparent;
+    color: white;
+    font-family: 'Segoe UI';
+    font-size: 17px;
+}
+
+#mensaje::placeholder {
+    color: #B4B7BB;
+}
+
+#mensaje:hover {
+    background-color: #616161;
+    cursor: pointer;
+}
+
+#publicar-btn {
+    position: relative;
+    background-color: transparent;
+    border-color: transparent;
+    margin-right: 80px;
+}
+
+#publicar-btn:hover {
+    cursor: pointer;
+}
+
+.txtpubli {
+    position: absolute;
+    color: #B8BBBF;
+    font-size: 15px;
+    top: -6px;
+    left: 40px;
+}
+
+.txtpubli:hover {
+    color: #c2c5c9;
+}
+
+.xz74otr:hover {
+    cursor: pointer;
+}
+
+#fotovideo-btn {
+    position: relative;
+    background-color: transparent;
+    border-color: transparent;
+    margin-right: 90px;
+}
+
+#fotovideo-btn:hover {
+    cursor: pointer;
+}
+
+.txtfv {
+    position: absolute;
+    color: #B8BBBF;
+    font-size: 15px;
+    top: -6px;
+    left: 35px;
+}
+
+.txtfv:hover {
+    color: #c2c5c9;
+}
+
+#sentimiento-btn {
+    position: relative;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+#sentimiento-btn:hover {
+    cursor: pointer;
+}
+
+.txtsa {
+    position: absolute;
+    color: #B8BBBF;
+    font-size: 15px;
+    top: -6px;
+    left: 35px;
+}
+
+.txtsa:hover {
+    color: #c2c5c9;
+}
+
+
+/* Añadir estilos para el nuevo contenedor de la imagen seleccionada */
+
+#selected-image-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+#selected-image {
+    max-width: 80%;
+    max-height: 80%;
+    border-radius: 10px;
+    /* Borde redondeado */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    /* Sombra */
+}
+
+
+/* Estilos para los botones de cambio de imagen seleccionada */
+
+.selected-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: white;
+    cursor: pointer;
+}
+
+#prev-selected-btn {
+    left: 20px;
+}
+
+#next-selected-btn {
+    right: 20px;
+}
+
+#close-selected-btn {
+    top: 20px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

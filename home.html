@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrusel de Imágenes</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="botones">
+        <button class="casita" id="casita"><svg viewBox="0 0 24 24" fill="currentColor" class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq" style="--color:var(--primary-button-background)"><path d="M9.464 1.286C10.294.803 11.092.5 12 .5c.908 0 1.707.303 2.537.786.795.462 1.7 1.142 2.815 1.977l2.232 1.675c1.391 1.042 2.359 1.766 2.888 2.826.53 1.059.53 2.268.528 4.006v4.3c0 1.355 0 2.471-.119 3.355-.124.928-.396 1.747-1.052 2.403-.657.657-1.476.928-2.404 1.053-.884.119-2 .119-3.354.119H7.93c-1.354 0-2.471 0-3.355-.119-.928-.125-1.747-.396-2.403-1.053-.656-.656-.928-1.475-1.053-2.403C1 18.541 1 17.425 1 16.07v-4.3c0-1.738-.002-2.947.528-4.006.53-1.06 1.497-1.784 2.888-2.826L6.65 3.263c1.114-.835 2.02-1.515 2.815-1.977zM10.5 13A1.5 1.5 0 0 0 9 14.5V21h6v-6.5a1.5 1.5 0 0 0-1.5-1.5h-3z"></path></svg></button>
+        <div id="textoInicio">Inicio</div>
+        <button class="videos" id="videos"><svg viewBox="0 0 24 24" fill="currentColor" class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq" style="--color:var(--secondary-icon)"><path d="M10.996 8.132A1 1 0 0 0 9.5 9v4a1 1 0 0 0 1.496.868l3.5-2a1 1 0 0 0 0-1.736l-3.5-2z"></path><path d="M14.573 2H9.427c-1.824 0-3.293 0-4.45.155-1.2.162-2.21.507-3.013 1.31C1.162 4.266.817 5.277.655 6.477.5 7.634.5 9.103.5 10.927v.146c0 1.824 0 3.293.155 4.45.162 1.2.507 2.21 1.31 3.012.802.803 1.813 1.148 3.013 1.31C6.134 20 7.603 20 9.427 20h5.146c1.824 0 3.293 0 4.45-.155 1.2-.162 2.21-.507 3.012-1.31.803-.802 1.148-1.813 1.31-3.013.155-1.156.155-2.625.155-4.449v-.146c0-1.824 0-3.293-.155-4.45-.162-1.2-.507-2.21-1.31-3.013-.802-.802-1.813-1.147-3.013-1.309C17.866 2 16.397 2 14.573 2zM3.38 4.879c.369-.37.887-.61 1.865-.741C6.251 4.002 7.586 4 9.5 4h5c1.914 0 3.249.002 4.256.138.978.131 1.496.372 1.865.74.37.37.61.888.742 1.866.135 1.007.137 2.342.137 4.256 0 1.914-.002 3.249-.137 4.256-.132.978-.373 1.496-.742 1.865-.369.37-.887.61-1.865.742-1.007.135-2.342.137-4.256.137h-5c-1.914 0-3.249-.002-4.256-.137-.978-.132-1.496-.373-1.865-.742-.37-.369-.61-.887-.741-1.865C2.502 14.249 2.5 12.914 2.5 11c0-1.914.002-3.249.138-4.256.131-.978.372-1.496.74-1.865zM8 21.5a1 1 0 1 0 0 2h8a1 1 0 1 0 0-2H8z"></path></svg></button>
+        <div id="textoVideo">Video</div>
+        <button class="market" id="market"><svg viewBox="0 0 24 24" fill="currentColor" class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq" style="--color:var(--secondary-icon)"><path d="M1.588 3.227A3.125 3.125 0 0 1 4.58 1h14.84c1.38 0 2.597.905 2.993 2.227l.816 2.719a6.47 6.47 0 0 1 .272 1.854A5.183 5.183 0 0 1 22 11.455v4.615c0 1.355 0 2.471-.119 3.355-.125.928-.396 1.747-1.053 2.403-.656.657-1.475.928-2.403 1.053-.884.12-2 .119-3.354.119H8.929c-1.354 0-2.47 0-3.354-.119-.928-.125-1.747-.396-2.403-1.053-.657-.656-.929-1.475-1.053-2.403-.12-.884-.119-2-.119-3.354V11.5l.001-.045A5.184 5.184 0 0 1 .5 7.8c0-.628.092-1.252.272-1.854l.816-2.719zM10 21h4v-3.5a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5V21zm6-.002c.918-.005 1.608-.025 2.159-.099.706-.095 1.033-.262 1.255-.485.223-.222.39-.55.485-1.255.099-.735.101-1.716.101-3.159v-3.284a5.195 5.195 0 0 1-1.7.284 5.18 5.18 0 0 1-3.15-1.062A5.18 5.18 0 0 1 12 13a5.18 5.18 0 0 1-3.15-1.062A5.18 5.18 0 0 1 5.7 13a5.2 5.2 0 0 1-1.7-.284V16c0 1.442.002 2.424.1 3.159.096.706.263 1.033.486 1.255.222.223.55.39 1.255.485.551.074 1.24.094 2.159.1V17.5a2.5 2.5 0 0 1 2.5-2.5h3a2.5 2.5 0 0 1 2.5 2.5v3.498zM4.581 3c-.497 0-.935.326-1.078.802l-.815 2.72A4.45 4.45 0 0 0 2.5 7.8a3.2 3.2 0 0 0 5.6 2.117 1 1 0 0 1 1.5 0A3.19 3.19 0 0 0 12 11a3.19 3.19 0 0 0 2.4-1.083 1 1 0 0 1 1.5 0A3.2 3.2 0 0 0 21.5 7.8c0-.434-.063-.865-.188-1.28l-.816-2.72A1.125 1.125 0 0 0 19.42 3H4.58z"></path></svg></button>
+        <div id="textoMarketplace">Marketplace</div>
+        <button class="comuni" id="comuni"><svg viewBox="0 0 24 24" fill="currentColor" class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq" style="--color:var(--secondary-icon)"><path d="M12 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8zm-2 4a2 2 0 1 1 4 0 2 2 0 0 1-4 0z"></path><path d="M.5 12C.5 5.649 5.649.5 12 .5S23.5 5.649 23.5 12 18.351 23.5 12 23.5.5 18.351.5 12zm2.21-2a9.537 9.537 0 0 0 0 3.993l.3.007A2 2 0 0 0 3 10h-.29zm.663-1.983a4 4 0 0 1 0 7.966 9.523 9.523 0 0 0 1.948 2.773A5.002 5.002 0 0 1 10 15.523h4a5.002 5.002 0 0 1 4.679 3.233 9.523 9.523 0 0 0 1.948-2.773 4 4 0 0 1 0-7.966A9.501 9.501 0 0 0 12 2.5a9.501 9.501 0 0 0-8.627 5.517zM21.5 12a9.55 9.55 0 0 0-.212-2.007l-.265.007H21a2 2 0 0 0-.01 4l.3-.007c.138-.643.21-1.31.21-1.993zM12 21.5a9.455 9.455 0 0 0 4.97-1.402A3 3 0 0 0 14 17.523h-4a3 3 0 0 0-2.97 2.575A9.456 9.456 0 0 0 12 21.5z"></path></svg></button>
+        <div id="textoGrupos">Grupos</div>
+        <button class="juegos" id="juegos"><svg viewBox="0 0 24 24" fill="currentColor" class="x19dipnz x1lliihq x1k90msu x2h7rmj x1qfuztq" style="--color:var(--secondary-icon)"><path d="M8 8a1 1 0 0 1 1 1v2h2a1 1 0 1 1 0 2H9v2a1 1 0 1 1-2 0v-2H5a1 1 0 1 1 0-2h2V9a1 1 0 0 1 1-1zm8 2a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0zm-2 4a1.5 1.5 0 1 0 3 0 1.5 1.5 0 0 0-3 0z"></path><path d="M.5 11a7 7 0 0 1 7-7h9a7 7 0 0 1 7 7v2a7 7 0 0 1-7 7h-9a7 7 0 0 1-7-7v-2zm7-5a5 5 0 0 0-5 5v2a5 5 0 0 0 5 5h9a5 5 0 0 0 5-5v-2a5 5 0 0 0-5-5h-9z"></path></svg></button>
+        <div id="textoVideojuegos">Videojuegos</div>
+    </div>
+    <div id="carousel-container">
+
+        <div id="image-carousel">
+
+            <div class="additional-component">
+                <img class="perfil" src="https://img.freepik.com/vector-gratis/ilustracion-icono-vector-dibujos-animados-lindo-gato-montando-cohete-concepto-icono-tecnologia-animal-aislado_138676-7052.jpg?w=740&t=st=1704338972~exp=1704339572~hmac=daf18faa0f3bbfaa6dd26e82f31e97dfe21aa5900b47d17143b11ede04efdef3"
+                    alt="Imagen Adicional">
+                <button id="crearHistoriaBtn" class="crearh">
+                    <a class="txth">+</a>
+                    <h1 class="txt">Crear historia</h1>
+                </button>
+            </div>
+            <img class="perfilhis1" src="https://img.freepik.com/fotos-premium/nino-pequeno-sobre-fondo-colorido-divertido-personaje-dibujos-animados-escuela-nino-3d-ia-generativa_58409-28884.jpg?w=740">
+            <img class="carousel-image" src="https://img.freepik.com/vector-gratis/dibujado-mano-ilustracion-dibujos-animados-jalapeno_52683-134151.jpg?w=740&t=st=1704338566~exp=1704339166~hmac=9421b986733ff1fd51ad18904a9750d9e0a78ed12fad1dcd18938afc55c14c13" alt="Imagen 1">
+            <h1 class="imgtxt1">Mad 105</h1>
+
+            <img class="perfilhis2" src="https://img.freepik.com/vector-gratis/nina-agitando-manos-ilustracion-dibujos-animados-saludo_56104-312.jpg?w=740&t=st=1704256252~exp=1704256852~hmac=cbf0fcc7ef5936d380d7bf18f13f4ca97c2ffeb476b81b9e643312862f995e3a">
+            <img class="carousel-image" src="https://img.freepik.com/vector-gratis/cute-astronaut-get-idea-with-bulb-cartoon-vector-icon-illustration-ciencia-tecnologia-aislado-plano_138676-7260.jpg?w=740&t=st=1704338593~exp=1704339193~hmac=68d02bfced1911842bd94a3aae6a75208a287336bbff677e567c07cdfe682e48"
+                alt="Imagen 2">
+            <h1 class="imgtxt2">Mad 106</h1>
+
+            <img class="perfilhis3" src="https://img.freepik.com/vector-gratis/ilustracion-dibujos-animados-pizza-dibujada-mano_52683-130592.jpg?w=740&t=st=1704256264~exp=1704256864~hmac=1a164b596918b914352aed3268173e1f930e5bd2ca58dc75990c56aa9ad90b73">
+            <img class="carousel-image" src="https://img.freepik.com/fotos-premium/colegial-triste-imagen-3d-fondo-colorido-ai-generativo_58409-28910.jpg?w=740" alt="Imagen 3">
+            <h1 class="imgtxt3">Mad 107</h1>
+
+            <img class="perfilhis4" src="https://img.freepik.com/vector-gratis/ilustracion-dibujos-animados-pizza-dibujada-mano_52683-130592.jpg?w=740&t=st=1704256264~exp=1704256864~hmac=1a164b596918b914352aed3268173e1f930e5bd2ca58dc75990c56aa9ad90b73">
+            <img class="carousel-image" src="https://img.freepik.com/fotos-premium/vida-secreta-personaje-dibujos-animados-mascotas_625492-10859.jpg?w=360" alt="Imagen 4">
+            <h1 class="imgtxt4">Mad 108</h1>
+
+            <img class="perfilhis5" src="https://img.freepik.com/fotos-premium/nino-pequeno-sobre-fondo-colorido-divertido-personaje-dibujos-animados-escuela-nino-3d-ia-generativa_58409-28888.jpg?w=740">
+            <img class="carousel-image" src="https://img.freepik.com/vector-gratis/lindo-panda-jugando-patineta-dibujos-animados-vector-icono-ilustracion-animal-deporte-icono-concepto-aislado_138676-8225.jpg?w=740&t=st=1704338635~exp=1704339235~hmac=7f71b4b16ef14478ee77a4002073370f54c7b09065c8d7d5666a077e1e8bcc14"
+                alt="Imagen 5">
+            <h1 class="imgtxt5">Mad 109</h1>
+
+            <img class="perfilhis6" src="https://img.freepik.com/vector-premium/cute-panda-astronaut-riding-rocket-cartoon-vector-icon-illustration-concepto-icono-tecnologia-animal-aislado-vector-premium-estilo-dibujos-animados-plana_138676-3880.jpg?w=740">
+            <img class="carousel-image" src="https://img.freepik.com/vector-gratis/hombre-lindo-que-toca-guitarra-ilustracion-icono-vector-historieta-bosque-concepto-icono-musica-personas-aislado-vector-premium-estilo-dibujos-animados-plana_138676-3864.jpg?w=740&t=st=1704338662~exp=1704339262~hmac=3a8090c32130c721b3e4700e5c15aa919fcb115f26130e62a29f51899b933c22"
+                alt="Imagen 6">
+            <h1 class="imgtxt6">Mad 110</h1>
+
+            <img class="perfilhis7" src="https://img.freepik.com/vector-gratis/ilustracion-dibujos-animados-arandano-dibujado-mano_23-2150700527.jpg?w=740&t=st=1704256312~exp=1704256912~hmac=9be4d11d8b7af77978730642bb33133be66521b2d8005f6eac6680ea95bd339c">
+            <img class="carousel-image" src="https://img.freepik.com/vector-gratis/nina-agitando-manos-ilustracion-dibujos-animados-saludo_56104-312.jpg?w=740&t=st=1704338679~exp=1704339279~hmac=affabf2effca8b7c9f858c3de716dfaf174a1a26e0f7223768c8f9c68de8c4bb" alt="Imagen 7">
+            <h1 class="imgtxt7">Mad 111</h1>
+
+            <img class="perfilhis8" src="https://img.freepik.com/vector-premium/divertidos-dibujos-animados-aguacate-surf_120675-89.jpg?w=740">
+            <img class="carousel-image" src="https://img.freepik.com/vector-premium/divertidos-dibujos-animados-aguacate-surf_120675-89.jpg?w=740" alt="Imagen 8">
+            <h1 class="imgtxt8">Mad 112</h1>
+
+            <img class="perfilhis9" src="https://img.freepik.com/vector-premium/ilustracion-diseno-personaje-mascota-linda-chico-amor_382438-3.jpg?w=740">
+            <img class="carousel-image" src="https://img.freepik.com/vector-gratis/lindo-fresco-taza-cafe-dibujos-animados-vector-icono-ilustracion-bebida-moda-icono-concepto-aislado-premium_138676-5185.jpg?w=740&t=st=1704338723~exp=1704339323~hmac=8400a3bd0ac3f89e34e34e12e0ed5674acea17d88bd1130d8b56a72327e5e76d"
+                alt="Imagen 9">
+            <h1 class="imgtxt9">Mad 113</h1>
+
+            <img class="perfilhis10" src="https://img.freepik.com/vector-gratis/ilustracion-icono-vector-dibujos-animados-lindo-gato-montando-cohete-concepto-icono-tecnologia-animal-aislado_138676-7052.jpg?w=740&t=st=1704338972~exp=1704339572~hmac=daf18faa0f3bbfaa6dd26e82f31e97dfe21aa5900b47d17143b11ede04efdef3">
+            <img class="carousel-image" src="https://img.freepik.com/vector-gratis/lindo-unicornio-negocio-dibujos-animados-vector-icono-ilustracion-animal-negocio-icono-concepto-aislado-plano_138676-9247.jpg?w=740&t=st=1704338759~exp=1704339359~hmac=06bc3033d94bf48a16e801cc3c965acedbcdd804f5107c682af6e41da547514b"
+                alt="Imagen 10">
+            <h1 class="imgtxt10">Mad 114</h1>
+        </div>
+        <button id="prev-btn" class="carousel-button" onclick="changeSlide(-1)">&#9665;</button>
+        <button id="next-btn" class="carousel-button" onclick="changeSlide(1)">&#9655;</button>
+    </div>
+
+    <div id="publicacion-container">
+        <div id="perfil-info">
+            <img src="https://img.freepik.com/vector-gratis/ilustracion-icono-vector-dibujos-animados-lindo-gato-montando-cohete-concepto-icono-tecnologia-animal-aislado_138676-7052.jpg?w=740&t=st=1704338972~exp=1704339572~hmac=daf18faa0f3bbfaa6dd26e82f31e97dfe21aa5900b47d17143b11ede04efdef3"
+                alt="Foto de perfil">
+        </div>
+        <div id="publicacion-form">
+            <textarea id="mensaje" placeholder="¿Qué estás pensando, Jostyn?"></textarea>
+            <button id="publicar-btn" onclick="publicar()"><img height="24" width="24" alt="" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/rsrc.php/v3/yr/r/c0dWho49-X3.png" style="filter: invert(0);"><h1 class="txtpubli">Publicar</h1></button>
+            <button id="fotovideo-btn"> <img height="24" width="24" alt="" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/rsrc.php/v3/y7/r/Ivw7nhRtXyo.png" style="filter: invert(0);"><h1 class="txtfv">Foto/Video</h1></button>
+            <button id="sentimiento-btn"><img height="24" width="24" alt="" class="xz74otr" referrerpolicy="origin-when-cross-origin" src="https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Y4mYLVOhTwq.png" style="filter: invert(0);"><h1 class="txtsa">Sentimiento/actividad</h1></button>
+        </div>
+    </div>
+
+    <div id="selected-image-container">
+        <button id="close-selected-btn" class="selected-btn">&#10006;</button>
+        <img id="selected-image" src="" alt="Imagen Seleccionada">
+        <button id="prev-selected-btn" class="selected-btn">&#9665;</button>
+        <button id="next-selected-btn" class="selected-btn">&#9655;</button>
+    </div>
+
+    <div id="uploadModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeUploadModal()">&times;</span>
+            <h2>Subir Foto</h2>
+            <input type="file" accept="image/*" id="fileInput">
+            <button onclick="uploadPhoto()">Subir Foto</button>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="welcome-box">
+            <img class="logo" src="assets/img/Utmachlogo.png" style="margin-top: 5%; margin-left: 15%; height: 200%;">
+            <h4 class="bienvenido">Bienvenidos</h4>
+            <h2 class="titulo">HELP DESK REPORT UTMACH</h2>
+            <br>
+            <p class="mensaje">Es un sistema rápido, sencillo y escalable para el seguimiento de errores que lo ayuda a corregirlos fácilmente y a entregar productos excelentes a tiempo. Ya sea que esté desarrollando software, gestionando proyectos o supervisando el rendimiento
+                de su equipo, esta herramienta ha sido diseñada para simplificar y mejorar su flujo de trabajo.</p>
+            <p class="mensaje">Este sistema es una herramienta esencial para cualquier equipo de desarrollo o gestión de proyectos que busque mantener un alto nivel de calidad en sus entregas. Su enfoque en la simplicidad, velocidad y escalabilidad lo convierte en una opción
+                confiable y eficiente para el seguimiento de errores y la entrega puntual de productos excelentes.</p>
+        </div>
+    </div>
+
+
+    <script src="home.js"></script>
+
+</body>
+
+</html>
