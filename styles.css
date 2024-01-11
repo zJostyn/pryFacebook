@@ -577,9 +577,89 @@ body {
     font-weight: bold;
 }
 
+#pause-btn {
+    float: right;
+    font-size: 13px;
+    font-weight: bold;
+    top: 23px;
+    left: 590px;
+}
+
 .close:hover,
 .close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
+}
+
+.reactions-container {
+    margin-top: 10px;
+    position: absolute;
+    left: 330px;
+    top: 550px;
+    color: white;
+}
+
+.likeimg {
+    width: 30px;
+    height: 30px;
+}
+
+.loveimg {
+    width: 30px;
+    height: 30px;
+}
+
+.wowimg {
+    width: 30px;
+    height: 30px;
+}
+
+.reactions-container button {
+    margin-right: 10px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.reactions-container button:hover {
+    cursor: pointer;
+}
+
+.comment-container {
+    margin-top: 20px;
+    position: absolute;
+    left: 567px;
+    top: 540px;
+}
+
+#comment-input {
+    background-color: transparent;
+    color: white;
+}
+
+.btncomment {
+    position: relative;
+    left: 240px;
+    top: -55px;
+    background-color: transparent;
+    border-color: transparent;
+}
+
+.btncomment:hover {
+    cursor: pointer;
+}
+
+.sendimg {
+    width: 40px;
+    height: 40px;
+}
+
+.comment-container textarea {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.comments-container {
+    margin-top: 20px;
+    color: white;
 }

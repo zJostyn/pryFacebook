@@ -96,8 +96,22 @@
     </div>
 
     <div id="selected-image-container">
+        <button id="pause-btn" class="selected-btn">Pausar</button>
         <button id="close-selected-btn" class="selected-btn">&#10006;</button>
         <img id="selected-image" src="" alt="Imagen Seleccionada">
+        <div class="reactions-container">
+            <button id="like-btn" onclick="react('like')"><img class="likeimg" src="img/like.png"></button>
+            <span id="like-count">0</span>
+            <button id="love-btn" onclick="react('love')"><img class="loveimg" src="img/encanta.png"></button>
+            <span id="love-count">0</span>
+            <button id="wow-btn" onclick="react('wow')"><img class="wowimg" src="img/asombra.png"></button>
+            <span id="wow-count">0</span>
+        </div>
+        <div class="comment-container">
+            <textarea id="comment-input" placeholder="Añade un comentario"></textarea>
+            <button class="btncomment" onclick="addComment()"><img class="sendimg" src="img/enviar.png"></button>
+        </div>
+        <div id="comments-container" class="comments-container"></div>
         <button id="prev-selected-btn" class="selected-btn">&#9665;</button>
         <button id="next-selected-btn" class="selected-btn">&#9655;</button>
     </div>
